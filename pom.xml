@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fank243.maven</groupId>
-    <artifactId>maven-dependencies</artifactId>
+    <artifactId>mvn-repo</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 

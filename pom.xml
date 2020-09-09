@@ -6,7 +6,7 @@
 
     <groupId>com.fank243.maven</groupId>
     <artifactId>fank243-dependencies</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>fank243 Dependencies</name>
@@ -156,12 +156,16 @@
                 <groupId>com.fank243.maven</groupId>
                 <artifactId>fank243-aliyun-dependencies</artifactId>
                 <version>${fank243-aliyun.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!--Spring Boot MyBatis Stater 依赖-->
             <dependency>
                 <groupId>com.fank243.maven</groupId>
                 <artifactId>fank243-mybatis-dependencies</artifactId>
                 <version>${fank243-mybatis.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -173,6 +177,18 @@
             <url>https://maven.pkg.github.com/fank243/mvn-repo</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Maven Packages</name>
+            <url>https://maven.pkg.github.com/fank243/mvn-repo</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+        </repository>
+    </repositories>
 
     <developers>
         <developer>

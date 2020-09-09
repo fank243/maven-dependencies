@@ -124,8 +124,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${repo.dir}/mvn-repo
-                    </altDeploymentRepository>
+                    <altDeploymentRepository>internal.repo::default::file://${repo.dir}/dependencies</altDeploymentRepository>
                 </configuration>
             </plugin>
             <plugin>
@@ -133,15 +132,15 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
-                    <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
+                    <message>Maven artifacts for dependencies-${project.version}</message>
                     <noJekyll>true</noJekyll>
-                    <outputDirectory>${repo.dir}/mvn-repo</outputDirectory>
+                    <outputDirectory>${repo.dir}/dependencies</outputDirectory>
                     <branch>refs/heads/master</branch>
                     <merge>true</merge>
                     <includes>
                         <include>**/*</include>
                     </includes>
-                    <repositoryName>mvn-repo</repositoryName>
+                    <repositoryName>dependencies</repositoryName>
                     <repositoryOwner>fank243</repositoryOwner>
                 </configuration>
                 <executions>

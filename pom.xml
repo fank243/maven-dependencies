@@ -179,7 +179,7 @@
                     <!-- matches distribution management repository url above -->
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <!-- remote branch name -->
-                    <branch>refs/heads/master</branch>
+                    <branch>refs/heads/dependencies</branch>
                     <includes>
                         <include>**/*</include>
                     </includes>

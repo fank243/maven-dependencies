@@ -32,8 +32,7 @@
 </dependency>
 ```
 
-
-主依赖
+MyBatis 依赖
 
 ```xml
 <dependency>
@@ -44,7 +43,6 @@
     <scope>import</scope>
 </dependency>
 ```
-
 
 阿里云 sdk
 

@@ -20,25 +20,60 @@
         <github.global.server>github</github.global.server>
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
+        <!--阿里云SDK-->
+        <fank243-aliyun.version>1.0.0</fank243-aliyun.version>
+        <!--Spring Boot MyBatis Stater 依赖-->
+        <fank243-mybatis.version>1.0.0</fank243-mybatis.version>
+
         <lombok.version>1.18.12</lombok.version>
         <commons-lang3.version>3.11</commons-lang3.version>
         <commons-io.version>2.7</commons-io.version>
         <commons-email.version>1.5</commons-email.version>
+        <httpclient.version>4.5.12</httpclient.version>
         <!--apache 出品 excel工具-->
         <poi.version>4.1.2</poi.version>
+
         <fastjson.version>1.2.73</fastjson.version>
         <!--alibaba出品 一款基于注解操作redis的组件-->
         <jetcache.version>2.6.0</jetcache.version>
+
         <!--一款多功能工具集组件-->
         <hutool.version>5.4.1</hutool.version>
-        <mysql-connector.version>8.0.21</mysql-connector.version>
+
+        <!--hibernate 请求参数注解验证器-->
         <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
+
         <!--一款生成图形验证码的插件-->
         <easy-captcha.version>1.6.2</easy-captcha.version>
+        <juint.version>4.13</juint.version>
+        <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
+        <mysql-connector.version>8.0.21</mysql-connector.version>
+
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${juint.version}</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
             <dependency>
                 <groupId>com.github.whvcse</groupId>
@@ -115,6 +150,19 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+
+            <!--阿里云 sdk 依赖-->
+            <dependency>
+                <groupId>com.fank243.maven</groupId>
+                <artifactId>fank243-aliyun-dependencies</artifactId>
+                <version>${fank243-aliyun.version}</version>
+            </dependency>
+            <!--Spring Boot MyBatis Stater 依赖-->
+            <dependency>
+                <groupId>com.fank243.maven</groupId>
+                <artifactId>fank243-mybatis-dependencies</artifactId>
+                <version>${fank243-mybatis.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -131,7 +179,7 @@
                     <!-- matches distribution management repository url above -->
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <!-- remote branch name -->
-                    <branch>refs/heads/dependencies</branch>
+                    <branch>refs/heads/master</branch>
                     <includes>
                         <include>**/*</include>
                     </includes>

@@ -20,6 +20,8 @@
         <github.global.server>github</github.global.server>
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
+        <!--Spring Boot 依赖-->
+        <fank243-boot.version>1.0.0</fank243-boot.version>
         <!--阿里云SDK-->
         <fank243-aliyun.version>1.0.0</fank243-aliyun.version>
         <!--Spring Boot MyBatis Stater 依赖-->
@@ -149,8 +151,17 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+                <!--<scope>provided</scope>-->
             </dependency>
 
+            <!--Spring Boot 依赖-->
+            <dependency>
+                <groupId>com.fank243.maven</groupId>
+                <artifactId>fank243-boot-dependencies</artifactId>
+                <version>${fank243-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--阿里云 sdk 依赖-->
             <dependency>
                 <groupId>com.fank243.maven</groupId>

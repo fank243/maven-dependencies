@@ -105,9 +105,10 @@
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
+            <!--alibaba 注解缓存框架,支持内存以及redis双存储机制-->
             <dependency>
                 <groupId>com.alicp.jetcache</groupId>
-                <artifactId>jetcache-core</artifactId>
+                <artifactId>jetcache-starter-redis</artifactId>
                 <version>${jetcache.version}</version>
             </dependency>
 

@@ -47,7 +47,7 @@
 
         <!--一款生成图形验证码的插件-->
         <easy-captcha.version>1.6.2</easy-captcha.version>
-        <juint.version>4.13</juint.version>
+        <juint.version>4.13.1</juint.version>
         <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
         <mysql-connector.version>8.0.21</mysql-connector.version>
 

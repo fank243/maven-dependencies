@@ -9,8 +9,8 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>Aliyun Dependencies</name>
-    <description>Aliyun Dependencies</description>
+    <name>fank243 Aliyun Dependencies</name>
+    <description>fank243 Aliyun Dependencies</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,9 +20,9 @@
         <github.global.server>github</github.global.server>
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
-        <aliyun-sdk-core.version>4.5.8</aliyun-sdk-core.version>
-        <aliyun-sdk-oss.version>3.11.0</aliyun-sdk-oss.version>
-        <aliyun-java-sdk-vod.version>2.15.10</aliyun-java-sdk-vod.version>
+        <aliyun-sdk-core.version>4.5.13</aliyun-sdk-core.version>
+        <aliyun-sdk-oss.version>3.11.1</aliyun-sdk-oss.version>
+        <aliyun-java-sdk-vod.version>2.15.12</aliyun-java-sdk-vod.version>
     </properties>
 
     <dependencyManagement>

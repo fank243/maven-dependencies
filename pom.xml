@@ -27,127 +27,108 @@
         <!--Spring Boot MyBatis Stater 依赖-->
         <fank243-mybatis.version>1.0.0</fank243-mybatis.version>
 
-        <lombok.version>1.18.12</lombok.version>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <lombok.version>1.18.16</lombok.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-lang3.version>3.11</commons-lang3.version>
-        <commons-io.version>2.7</commons-io.version>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <commons-io.version>2.8.0</commons-io.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
         <commons-email.version>1.5</commons-email.version>
-        <httpclient.version>4.5.12</httpclient.version>
-        <!--apache 出品 excel工具-->
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <httpclient.version>4.5.13</httpclient.version>
+        <!--apache 出品 excel工具 https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <poi.version>4.1.2</poi.version>
 
-        <fastjson.version>1.2.73</fastjson.version>
-        <!--alibaba出品 一款基于注解操作redis的组件-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <fastjson.version>1.2.75</fastjson.version>
+        <!-- alibaba 注解缓存框架,支持内存以及redis双存储机制 https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
         <jetcache.version>2.6.0</jetcache.version>
 
-        <!--一款多功能工具集组件-->
-        <hutool.version>5.4.1</hutool.version>
+        <!--一款多功能工具集组件 https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <hutool.version>5.5.4</hutool.version>
 
-        <!--hibernate 请求参数注解验证器-->
-        <hibernate-validator.version>6.1.5.Final</hibernate-validator.version>
+        <!--hibernate 请求参数注解验证器 https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <hibernate-validator.version>7.0.0.Final</hibernate-validator.version>
 
-        <!--一款生成图形验证码的插件-->
+        <!--一款生成图形验证码的插件 https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
         <easy-captcha.version>1.6.2</easy-captcha.version>
-        <juint.version>4.13</juint.version>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <juint.version>4.13.1</juint.version>
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
         <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
-        <mysql-connector.version>8.0.21</mysql-connector.version>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <mysql-connector.version>8.0.22</mysql-connector.version>
 
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
                 <version>${springfox-swagger2.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/junit/junit -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${juint.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
             <dependency>
                 <groupId>com.github.whvcse</groupId>
                 <artifactId>easy-captcha</artifactId>
                 <version>${easy-captcha.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
-            <!--alibaba 注解缓存框架,支持内存以及redis双存储机制-->
             <dependency>
                 <groupId>com.alicp.jetcache</groupId>
                 <artifactId>jetcache-starter-redis</artifactId>
                 <version>${jetcache.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>${poi.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-email</artifactId>
                 <version>${commons-email.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>

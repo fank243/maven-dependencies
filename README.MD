@@ -1,4 +1,4 @@
-# mvn reso
+# mvn repo
 
 使用方式
 

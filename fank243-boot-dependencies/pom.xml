@@ -9,8 +9,8 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>Spring Boot Dependencies</name>
-    <description>Spring Boot Dependencies 官方依赖pom未包含的组件</description>
+    <name>fank243 Spring Boot Dependencies</name>
+    <description>fank243 Spring Boot Dependencies 官方依赖pom未包含的组件</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

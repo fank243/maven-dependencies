@@ -14,18 +14,16 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <github.global.server>github</github.global.server>
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
         <druid-spring-boot-starter.version>1.2.4</druid-spring-boot-starter.version>
-        <!-- nacos 配置中心 https://mvnrepository.com/artifact/com.alibaba.boot/nacos-config-spring-boot-starter -->
-        <nacos-config-spring-boot-starter.version>0.2.7</nacos-config-spring-boot-starter.version>
-        <!-- nacos 服务发现与注册 https://mvnrepository.com/artifact/com.alibaba.boot/nacos-discovery-spring-boot-starter -->
-        <nacos-discovery-spring-boot-starter.version>0.2.7</nacos-discovery-spring-boot-starter.version>
+        <!--https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter-->
+        <mybatis-plus-boot-starter.version>3.4.3.1</mybatis-plus-boot-starter.version>
     </properties>
 
     <dependencyManagement>
@@ -36,16 +34,10 @@
                 <version>${druid-spring-boot-starter.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba.boot</groupId>
-                <artifactId>nacos-config-spring-boot-starter</artifactId>
-                <version>${nacos-config-spring-boot-starter.version}</version>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.alibaba.boot</groupId>
-                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
-                <version>${nacos-discovery-spring-boot-starter.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 

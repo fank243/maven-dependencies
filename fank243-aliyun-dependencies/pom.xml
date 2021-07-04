@@ -21,9 +21,9 @@
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
         <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
-        <aliyun-sdk-core.version>4.5.17</aliyun-sdk-core.version>
+        <aliyun-sdk-core.version>4.5.22</aliyun-sdk-core.version>
         <!-- https://mvnrepository.com/artifact/com.aliyun.oss/aliyun-sdk-oss -->
-        <aliyun-sdk-oss.version>3.11.2</aliyun-sdk-oss.version>
+        <aliyun-sdk-oss.version>3.13.0</aliyun-sdk-oss.version>
         <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-vod -->
         <aliyun-java-sdk-vod.version>2.15.12</aliyun-java-sdk-vod.version>
     </properties>

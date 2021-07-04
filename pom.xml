@@ -14,8 +14,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <github.global.server>github</github.global.server>
         <maven-deploy.version>2.8.2</maven-deploy.version>
@@ -24,15 +24,13 @@
         <fank243-boot.version>1.0.0</fank243-boot.version>
         <!--阿里云SDK-->
         <fank243-aliyun.version>1.0.0</fank243-aliyun.version>
-        <!--Spring Boot MyBatis Stater 依赖-->
-        <fank243-mybatis.version>1.0.0</fank243-mybatis.version>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <lombok.version>1.18.16</lombok.version>
+        <lombok.version>1.18.20</lombok.version>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-        <commons-lang3.version>3.11</commons-lang3.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <commons-io.version>2.8.0</commons-io.version>
+        <commons-io.version>2.10.0</commons-io.version>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
         <commons-email.version>1.5</commons-email.version>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -41,25 +39,39 @@
         <poi.version>4.1.2</poi.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <fastjson.version>1.2.75</fastjson.version>
+        <fastjson.version>1.2.76</fastjson.version>
         <!-- alibaba 注解缓存框架,支持内存以及redis双存储机制 https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
         <jetcache.version>2.6.0</jetcache.version>
 
         <!--一款多功能工具集组件 https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-        <hutool.version>5.5.4</hutool.version>
+        <hutool.version>5.7.3</hutool.version>
 
         <!--hibernate 请求参数注解验证器 https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <hibernate-validator.version>7.0.0.Final</hibernate-validator.version>
-
         <!--一款生成图形验证码的插件 https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
         <easy-captcha.version>1.6.2</easy-captcha.version>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <juint.version>4.13.1</juint.version>
+        <juint.version>4.13.2</juint.version>
         <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
-        <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
+        <swagger.version>3.0.0</swagger.version>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <mysql-connector.version>8.0.22</mysql-connector.version>
+        <mysql-connector.version>8.0.25</mysql-connector.version>
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <postgresql.version>42.2.22</postgresql.version>
+        <arthas-spring-boot-starter.version>3.4.8</arthas-spring-boot-starter.version>
 
+        <nacos-client.version>2.0.2</nacos-client.version>
+        <netty.version>4.1.65.Final</netty.version>
+
+        <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc-->
+        <smart-doc-maven-plugin.version>2.2.1</smart-doc-maven-plugin.version>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin-->
+        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin-->
+        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -67,7 +79,12 @@
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
-                <version>${springfox-swagger2.version}</version>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -93,6 +110,13 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
+                <scope>runtime</scope>
             </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -115,6 +139,11 @@
                 <version>${poi.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-email</artifactId>
                 <version>${commons-email.version}</version>
@@ -133,7 +162,23 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
-                <!--<scope>provided</scope>-->
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.taobao.arthas</groupId>
+                <artifactId>arthas-spring-boot-starter</artifactId>
+                <version>${arthas-spring-boot-starter.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.version}</version>
             </dependency>
 
             <!--Spring Boot 依赖-->
@@ -152,16 +197,35 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--Spring Boot MyBatis Stater 依赖-->
-            <dependency>
-                <groupId>com.fank243.maven</groupId>
-                <artifactId>fank243-mybatis-dependencies</artifactId>
-                <version>${fank243-mybatis.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.github.shalousun</groupId>
+                    <artifactId>smart-doc-maven-plugin</artifactId>
+                    <version>${smart-doc-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven-jar-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${maven-dependency-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <distributionManagement>
         <repository>

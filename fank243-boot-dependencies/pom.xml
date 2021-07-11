@@ -21,9 +21,11 @@
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
-        <druid-spring-boot-starter.version>1.2.4</druid-spring-boot-starter.version>
+        <spring-boot-druid.version>1.2.4</spring-boot-druid.version>
         <!--https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter-->
-        <mybatis-plus-boot-starter.version>3.4.3.1</mybatis-plus-boot-starter.version>
+        <spring-boot-mp.version>3.4.3.1</spring-boot-mp.version>
+        <!-- https://maven.aliyun.com/mvn/search -->
+        <spring-boot-arthas.version>3.5.2</spring-boot-arthas.version>
     </properties>
 
     <dependencyManagement>
@@ -31,12 +33,17 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-spring-boot-starter.version}</version>
+                <version>${spring-boot-druid.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus-boot-starter.version}</version>
+                <version>${spring-boot-mp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.taobao.arthas</groupId>
+                <artifactId>arthas-spring-boot-starter</artifactId>
+                <version>${spring-boot-arthas.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

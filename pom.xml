@@ -47,7 +47,7 @@
         <hutool.version>5.7.3</hutool.version>
 
         <!--hibernate 请求参数注解验证器 https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
-        <hibernate-validator.version>7.0.0.Final</hibernate-validator.version>
+        <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
         <!--一款生成图形验证码的插件 https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
         <easy-captcha.version>1.6.2</easy-captcha.version>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -57,21 +57,22 @@
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <mysql-connector.version>8.0.25</mysql-connector.version>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <postgresql.version>42.2.22</postgresql.version>
-        <arthas-spring-boot-starter.version>3.4.8</arthas-spring-boot-starter.version>
+        <postgresql.version>42.2.23</postgresql.version>
 
+        <!--https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client-->
         <nacos-client.version>2.0.2</nacos-client.version>
+        <!--https://mvnrepository.com/artifact/io.netty/netty-all-->
         <netty.version>4.1.65.Final</netty.version>
-
-        <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc-->
-        <smart-doc-maven-plugin.version>2.2.1</smart-doc-maven-plugin.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin-->
+        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
-        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin-->
+        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+
+        <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc -->
+        <maven-plugin-smart-doc.version>2.2.2</maven-plugin-smart-doc.version>
     </properties>
 
     <dependencyManagement>
@@ -165,12 +166,6 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>com.taobao.arthas</groupId>
-                <artifactId>arthas-spring-boot-starter</artifactId>
-                <version>${arthas-spring-boot-starter.version}</version>
-                <type>jar</type>
-            </dependency>
-            <dependency>
                 <groupId>com.alibaba.nacos</groupId>
                 <artifactId>nacos-client</artifactId>
                 <version>${nacos-client.version}</version>
@@ -206,7 +201,7 @@
                 <plugin>
                     <groupId>com.github.shalousun</groupId>
                     <artifactId>smart-doc-maven-plugin</artifactId>
-                    <version>${smart-doc-maven-plugin.version}</version>
+                    <version>${maven-plugin-smart-doc.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

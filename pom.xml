@@ -6,7 +6,7 @@
 
     <groupId>com.fank243.maven</groupId>
     <artifactId>fank243-dependencies</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <name>fank243 Dependencies</name>
@@ -26,11 +26,11 @@
         <fank243-aliyun.version>1.0.0</fank243-aliyun.version>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <lombok.version>1.18.20</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <commons-io.version>2.10.0</commons-io.version>
+        <commons-io.version>2.11.0</commons-io.version>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
         <commons-email.version>1.5</commons-email.version>
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -39,12 +39,12 @@
         <poi.version>4.1.2</poi.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <fastjson.version>1.2.76</fastjson.version>
+        <fastjson.version>1.2.78</fastjson.version>
         <!-- alibaba 注解缓存框架,支持内存以及redis双存储机制 https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
         <jetcache.version>2.6.0</jetcache.version>
 
         <!--一款多功能工具集组件 https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-        <hutool.version>5.7.3</hutool.version>
+        <hutool.version>5.7.16</hutool.version>
 
         <!--hibernate 请求参数注解验证器 https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
         <hibernate-validator.version>7.0.1.Final</hibernate-validator.version>
@@ -55,14 +55,14 @@
         <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
         <swagger.version>3.0.0</swagger.version>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <mysql-connector.version>8.0.25</mysql-connector.version>
+        <mysql-connector.version>8.0.27</mysql-connector.version>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <postgresql.version>42.2.23</postgresql.version>
+        <postgresql.version>42.3.1</postgresql.version>
 
-        <!--https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client-->
-        <nacos-client.version>2.0.2</nacos-client.version>
-        <!--https://mvnrepository.com/artifact/io.netty/netty-all-->
-        <netty.version>4.1.65.Final</netty.version>
+        <!--https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client -->
+        <nacos-client.version>2.0.3</nacos-client.version>
+        <!--https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <netty.version>4.1.70.Final</netty.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -72,7 +72,7 @@
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
 
         <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc -->
-        <maven-plugin-smart-doc.version>2.2.2</maven-plugin-smart-doc.version>
+        <smart-doc-maven-plugin.version>2.3.2</smart-doc-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -201,7 +201,7 @@
                 <plugin>
                     <groupId>com.github.shalousun</groupId>
                     <artifactId>smart-doc-maven-plugin</artifactId>
-                    <version>${maven-plugin-smart-doc.version}</version>
+                    <version>${smart-doc-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

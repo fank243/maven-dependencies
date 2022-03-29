@@ -6,7 +6,7 @@
 
     <groupId>com.fank243.maven</groupId>
     <artifactId>fank243-dependencies</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <name>fank243 Dependencies</name>

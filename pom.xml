@@ -35,15 +35,15 @@
         <poi.version>4.1.2</poi.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <fastjson.version>1.2.78</fastjson.version>
+        <fastjson.version>1.2.80</fastjson.version>
         <!-- alibaba 注解缓存框架,支持内存以及redis双存储机制 https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
-        <jetcache.version>2.6.1</jetcache.version>
+        <jetcache.version>2.6.2</jetcache.version>
 
         <!--一款多功能工具集组件 https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
-        <hutool.version>5.7.17</hutool.version>
+        <hutool.version>5.7.22</hutool.version>
 
         <!--hibernate 请求参数注解验证器 https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
-        <hibernate-validator.version>7.0.2.Final</hibernate-validator.version>
+        <hibernate-validator.version>7.0.4.Final</hibernate-validator.version>
         <!--一款生成图形验证码的插件 https://mvnrepository.com/artifact/com.github.whvcse/easy-captcha -->
         <easy-captcha.version>1.6.2</easy-captcha.version>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -51,27 +51,27 @@
         <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
         <swagger.version>3.0.0</swagger.version>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <mysql-connector.version>8.0.27</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <postgresql.version>42.3.3</postgresql.version>
 
         <!--https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client -->
-        <nacos-client.version>2.0.3</nacos-client.version>
+        <nacos-client.version>2.0.4</nacos-client.version>
         <!--https://mvnrepository.com/artifact/io.netty/netty-all -->
-        <netty.version>4.1.72.Final</netty.version>
+        <netty.version>4.1.75.Final</netty.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
-        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+        <maven-dependency-plugin.version>3.2.2</maven-dependency-plugin.version>
 
         <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc -->
-        <smart-doc-maven-plugin.version>2.3.4</smart-doc-maven-plugin.version>
+        <smart-doc-maven-plugin.version>2.4.2</smart-doc-maven-plugin.version>
 
        <!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
-        <docker-maven-plugin.version>0.38.0</docker-maven-plugin.version>
+        <docker-maven-plugin.version>0.39.1</docker-maven-plugin.version>
     </properties>
 
     <dependencyManagement>

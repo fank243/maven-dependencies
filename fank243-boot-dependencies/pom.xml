@@ -19,9 +19,9 @@
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
         <spring-boot-druid.version>1.2.8</spring-boot-druid.version>
         <!--https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
-        <spring-boot-mp.version>3.4.3.4</spring-boot-mp.version>
+        <spring-boot-mp.version>3.5.1</spring-boot-mp.version>
         <!-- https://maven.aliyun.com/mvn/search -->
-        <spring-boot-arthas.version>3.5.5</spring-boot-arthas.version>
+        <spring-boot-arthas.version>3.6.0</spring-boot-arthas.version>
     </properties>
 
     <dependencyManagement>

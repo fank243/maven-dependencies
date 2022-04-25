@@ -6,7 +6,7 @@
 
     <groupId>com.fank243.maven</groupId>
     <artifactId>fank243-aliyun-dependencies</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
 
     <name>fank243 Aliyun Dependencies</name>
@@ -19,9 +19,9 @@
         <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
         <aliyun-sdk-core.version>4.6.0</aliyun-sdk-core.version>
         <!-- https://mvnrepository.com/artifact/com.aliyun.oss/aliyun-sdk-oss -->
-        <aliyun-sdk-oss.version>3.14.0</aliyun-sdk-oss.version>
+        <aliyun-sdk-oss.version>3.14.1</aliyun-sdk-oss.version>
         <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-vod -->
-        <aliyun-java-sdk-vod.version>2.16.6</aliyun-java-sdk-vod.version>
+        <aliyun-java-sdk-vod.version>2.16.7</aliyun-java-sdk-vod.version>
 
     </properties>
 

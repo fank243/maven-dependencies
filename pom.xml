@@ -17,12 +17,12 @@
         <maven-deploy.version>2.8.2</maven-deploy.version>
 
         <!--Spring Boot 依赖-->
-        <fank243-boot.version>1.0.1</fank243-boot.version>
+        <fank243-boot.version>1.0.3</fank243-boot.version>
         <!--阿里云SDK-->
-        <fank243-aliyun.version>1.0.1</fank243-aliyun.version>
+        <fank243-aliyun.version>1.0.3</fank243-aliyun.version>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <lombok.version>1.18.22</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -32,12 +32,12 @@
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <httpclient.version>4.5.13</httpclient.version>
         <!--apache 出品 excel工具 https://mvnrepository.com/artifact/org.apache.poi/poi -->
-        <poi.version>4.1.2</poi.version>
+        <poi.version>5.2.2</poi.version>
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <fastjson.version>1.2.80</fastjson.version>
+        <fastjson.version>2.0.1</fastjson.version>
         <!-- alibaba 注解缓存框架,支持内存以及redis双存储机制 https://mvnrepository.com/artifact/com.alicp.jetcache/jetcache-core -->
-        <jetcache.version>2.6.2</jetcache.version>
+        <jetcache.version>2.6.4</jetcache.version>
 
         <!--一款多功能工具集组件 https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
         <hutool.version>5.7.22</hutool.version>
@@ -53,22 +53,22 @@
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <mysql-connector.version>8.0.28</mysql-connector.version>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <postgresql.version>42.3.3</postgresql.version>
+        <postgresql.version>42.3.4</postgresql.version>
 
         <!--https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-client -->
         <nacos-client.version>2.0.4</nacos-client.version>
         <!--https://mvnrepository.com/artifact/io.netty/netty-all -->
-        <netty.version>4.1.75.Final</netty.version>
+        <netty.version>4.1.76.Final</netty.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
-        <!--https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
-        <maven-dependency-plugin.version>3.2.2</maven-dependency-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-dependency-plugin -->
+        <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
 
-        <!--https://mvnrepository.com/artifact/com.github.shalousun/smart-doc -->
-        <smart-doc-maven-plugin.version>2.4.2</smart-doc-maven-plugin.version>
+        <!-- https://mvnrepository.com/artifact/com.github.shalousun/smart-doc-maven-plugin -->
+        <smart-doc-maven-plugin.version>2.4.3</smart-doc-maven-plugin.version>
 
        <!-- https://mvnrepository.com/artifact/io.fabric8/docker-maven-plugin -->
         <docker-maven-plugin.version>0.39.1</docker-maven-plugin.version>
